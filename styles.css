@@ -1,0 +1,116 @@
+/* Reset de estilos por defecto */
+:root {
+    --selected-color-1: #4CAF50;
+    --selected-color-2: #af604c;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilo del encabezado */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+#mes-select {
+    align-items: center; /* Centrar verticalmente si es necesario */
+    margin: 0px 50px; /* Espaciado opcional */
+}
+
+
+/* Sección de reglas del juego */
+#game-rules {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+}
+#color-pickers {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes */
+#imagenes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#imagenes_combinaciones img {
+    margin: 10px;
+    width: 200px; /* Usa la variable para definir el ancho */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#imagenes_combinaciones img {
+    margin: 10px;
+    width: 200px; /* Usa la variable para definir el ancho */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Estilo para la imagen seleccionada */
+
+.selected1 {
+    border: 4px solid var(--selected-color-1);
+    transform: scale(1.05);
+}
+
+.selected2 {
+    border: 4px solid var(--selected-color-2);
+    transform: scale(1.05);
+}
+
+
+.green-tint {
+    filter: sepia(1) saturate(5) hue-rotate(90deg); /* Tono verde */
+}
+.red-tint {
+    filter: sepia(1) saturate(10) hue-rotate(-30deg);; /* Tono rojo */
+}
